@@ -1,0 +1,11 @@
+<RunSettings>
+  <RunConfiguration>
+    <ResultsDirectory>.\test_results</ResultsDirectory>
+    <TargetPlatform>x64</TargetPlatform>
+    <TargetFrameworkVersion>Framework40</TargetFrameworkVersion>
+  </RunConfiguration>
+  <SpecRun>
+    <Profile>SpecFlow_Example_SmokeTest.srprofile</Profile>
+    <ReportFile>SpecFlow_Example_{now}.html</ReportFile>
+  </SpecRun>
+</RunSettings>

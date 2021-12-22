@@ -1,0 +1,17 @@
+*.feature.cs
+
+# Visual Studio Code
+.vscode/
+
+# SpecFlow
+Drivers/
+Hooks/
+Templates/
+
+# Build results
+bin/
+obj/
+
+
+# Test results
+test_results/

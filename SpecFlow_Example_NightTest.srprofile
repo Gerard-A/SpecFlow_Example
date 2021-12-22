@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestProfile
+    xmlns="http://www.specflow.org/schemas/plus/TestProfile/1.5">
+    <Settings name="NightTest_Profile" projectName="SpecFlow_Example" />
+    <Execution 
+        retryFor="None"
+        stopAfterFailures="0" 
+        testThreadCount="1" 
+        testSchedulingMode="Random" 
+        retryCount="2" 
+        apartmentState="Unknown" />
+    <Filter>@NightTest</Filter>
+</TestProfile>
