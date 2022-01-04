@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestProfile
+    xmlns="http://www.specflow.org/schemas/plus/TestProfile/1.5">
+    <Settings name="Test_Report" projectName="SpecFlow_Example" />
+    <Execution 
+        retryFor="None"
+        stopAfterFailures="0" 
+        testThreadCount="1" 
+        testSchedulingMode="Sequential" 
+        retryCount="2" 
+        apartmentState="Unknown" />
+   	<Report>
+	    <Template name="../../../Templates/ReportTemplate.cshtml" outputName="SpecFlow_Example_Test_Report_{now}.html"/>
+        <Template name="../../../Templates/CucumberJson.cshtml" outputName="Cucumber_Test_Report_{now}.json"/>
+	</Report>
+</TestProfile>
