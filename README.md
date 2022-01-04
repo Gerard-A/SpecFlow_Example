@@ -5,7 +5,7 @@ This Specflow example shows the following Gherkin features:
 - Background
 - Given, When, Then, And
 - Scenario and Scenario Outline + Examples
-- tags
+- Tags
 
 "SpecFlow" documentation is available on: https://docs.specflow.org/projects/specflow/en/latest/index.html
 
@@ -23,9 +23,9 @@ The Background contains common steps that will be executed before every Scenario
 ## Test execution
 
 Prerequisites: 
-- 
+- SpecFlow+ Runner is installed and registered (See https://docs.specflow.org/projects/specflow-runner/en/latest/Installation/Installation.html)
 
-To run the tests execute commands:  
-- `runTest.bat`  to run all tests
+To run the tests, execute commands:  
+- `runTest.bat` to run all tests
 - `runSmokeTest.bat` to run all test cases that are tagged with '@SmokeTest'
 - `runNightTest.bat` to run all test cases that are tagged with '@NightTest'

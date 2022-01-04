@@ -18,7 +18,6 @@ using FluentAssertions;
 	        RestClient client;
 			RestRequest request;
             IRestResponse response;
-            IEnumerable<Place> places;
 
 			public StepDefinitions(ScenarioContext scenarioContext)
 			{
@@ -28,7 +27,6 @@ using FluentAssertions;
 			[Given(@"the country code '(.*)' and zip code '(.*)'")]
 			public void Giventhecountrycodeusandzipcode(string countryCode, string zipCode)
 			{
-				// _scenarioContext.Pending();
 				client = new RestClient("http://api.zippopotam.us");
 				request = new RestRequest($"{countryCode}/{zipCode}", Method.GET);
 			}
@@ -62,13 +60,6 @@ using FluentAssertions;
 				}
 				listOfStateNames.Should().ContainEquivalentOf(stateName);
 			}
-
-			// [Then(@"the response contains the place name '(.*)' and state name '(.*)'")]
-			// public void Thentheresponsecontainstheplacenameandstatename(string placeName, string stateName)
-            // {
-            //     this.Thentheresponsecontainstheplacename(placeName);
-			// 	this.Thentheresponsecontainsthestatename(stateName);
-			// }
 
 			[Then(@"the response contains exactly '(.*)' location|s")]
 			public void Thentheresponsecontainsexactlylocation(int numberOfLocations)

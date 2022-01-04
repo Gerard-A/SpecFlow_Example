@@ -6,7 +6,6 @@
 # SpecFlow
 Drivers/
 Hooks/
-Templates/
 
 # Build results
 bin/
