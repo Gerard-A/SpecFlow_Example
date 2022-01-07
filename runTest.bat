@@ -4,7 +4,9 @@ For /f "tokens=1-2 delims=/:" %%a in ('time /t') do (set mytime=%%a%%b)
 
 set GITBRANCH=
 for /f %%I in ('git branch --show-current 2^> NUL') do set GITBRANCH=%%I
+echo GITBRANCH = %GITBRANCH%
 set "BRANCH=%GITBRANCH:/=_%"
+echo BRANCH = %BRANCH%
 
 @REM Build and run test
 dotnet test -s .\SpecFlow_Example.runsettings
