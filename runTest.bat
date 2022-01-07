@@ -1,8 +1,7 @@
-@echo off
+@REM @echo off
 For /f "tokens=2-4 delims=/ " %%a in ('date /t') do (set mydate=%%c_%%a_%%b)
 For /f "tokens=1-2 delims=/:" %%a in ('time /t') do (set mytime=%%a%%b)
 
-git branch --show-current
 set GITBRANCH=
 for /f %%I in ('git branch --show-current 2^> NUL') do set GITBRANCH=%%I
 set "BRANCH=%GITBRANCH:/=_%"
