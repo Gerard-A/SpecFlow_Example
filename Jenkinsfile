@@ -19,14 +19,15 @@ pipeline {
             }
             post {
                 always {  
-                    publishHTML target: [
-                    allowMissing: false,
-                    alwaysLinkToLastBuild: false,
-                    keepAll: true,
-                    reportDir: 'test_results',
-                    reportFiles: '*LivingDoc*.html',
-                    reportName: 'SpecFlow Example LivingDoc Report'
-                    ]
+                    publishHTML (
+                        [ allowMissing: false,
+                          alwaysLinkToLastBuild: false,
+                          keepAll: true,
+                          reportDir: 'test_results',
+                          reportFiles: '*LivingDoc*.html',
+                          reportName: 'SpecFlow Example LivingDoc Report'
+                        ]
+                    )
                 }
             }
         }
