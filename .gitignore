@@ -11,6 +11,8 @@ Hooks/
 bin/
 obj/
 
+# dotnet tools
+.config
 
 # Test results
 test_results/
